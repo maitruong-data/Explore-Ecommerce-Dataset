@@ -15,6 +15,8 @@ This eCommerce dataset is stored in a public Google BigQuery dataset. To access 
 - Get data through:
 -  this link https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2sgoogle_analytics_sample!3sga_sessions_20170801
 -  Or create a new project in BigQuery -> select "Add Data" -> "Search a project" -> Enter the project ID "bigquery-public-data.google_analytics_sample.ga_sessions" -> "Enter" -> Click on the "ga_sessions_" table to open it
+
+  
 | STT | Cột 1 | Cột 2 |
 | :—– | :———- | :————– |
 | 1 | Dòng 11 | Dòng 21 |
