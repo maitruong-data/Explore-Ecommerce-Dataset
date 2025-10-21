@@ -66,7 +66,7 @@ ORDER BY month;
 
 <img width="911" height="305" alt="image" src="https://github.com/user-attachments/assets/c93ba95c-696d-49ca-97ce-3aeb22f21db3" />
 
-**Key-takeaway**
+**Key-takeaway:**
 May had the highest conversion rate (1.77%) while July brought peak volume (71.8k visits, 270k page views) but a relatively low conversion rate (1.49%).
 
 ### Query 2. Calculate cohort map from product view to addtocart to purchase in 2017 (January-August).
@@ -125,7 +125,7 @@ ORDER BY pv.month;
 **Query result**
 <img width="1031" height="307" alt="image" src="https://github.com/user-attachments/assets/d81db07a-af69-4e5f-9563-0c7f506e6e3a" />
 
-**Key-takeaway**
+**Key-takeaway:**
 The funnel was stable across months: ~28–42% from product views to addtocart and ~8–15% of views convert to purchase.
 
 ### Query 3. Bounce rate per traffic source in July 2017
@@ -146,7 +146,7 @@ ORDER BY bounce_rate DESC;
 **Query result**
 <img width="574" height="568" alt="image" src="https://github.com/user-attachments/assets/dd657a27-fcee-419d-b16b-86cf311b4c40" />
 
-**Key-takeaway**
+**Key-takeaway:**
 In July, Google and (direct) had the most visits with mid-range bounce (~52% and 43%), while youtube.com brought sizable traffic but poor quality (~67% bounce). Other Email/referral sources like reddit.com (~29%), mail.google.com (~25% bounce) or blog.golang.org (~29%) showed the healthiest engagement.
 
 ### Query 4. Revenue by traffic source in July 2017
@@ -177,7 +177,7 @@ ORDER BY month, revenue DESC;
 **Query result**
 <img width="527" height="352" alt="image" src="https://github.com/user-attachments/assets/87880d26-1ebc-48b0-9d04-4c3d9645b09c" />
 
-**Key-takeaway**
+**Key-takeaway:**
 In July, most of revenue came from (direct) and Google
 
 ### Query 5. Average number of pageviews by purchaser type (purchasers vs non-purchasers) in July 2017.
@@ -219,7 +219,7 @@ Non-purchasers view far more pages than purchasers (~334 vs ~124/pageviews per u
 **Query result**
 <img width="593" height="72" alt="image" src="https://github.com/user-attachments/assets/6f94631b-4144-4bf2-8b81-b273e95b3c0f" />
 
-**Key-takeaway**
+**Key-takeaway:**
 Non-purchasers' pageviews were far more than purchasers' (~334 vs ~124 pageviews per user), hinting at friction or dead-ends before checkout.
 
 ### Query 6. Average transactions per purchasing user in July 2017 
@@ -290,7 +290,7 @@ ORDER BY quantity DESC;
 **Query result**
 <img width="427" height="568" alt="image" src="https://github.com/user-attachments/assets/685078a1-db4d-4a07-a70d-d63640f2b310" />
 
-**Key-takeaway**
+**Key-takeaway:**
 Buyers of *YouTube Men’s Vintage Henley* frequently also purchased *Google Sunglasses* (20), *Women’s Vintage Hero Tee Black* (7), and *SPF-15 & Lip Balm* (6) etc.
 
 
@@ -298,10 +298,12 @@ Buyers of *YouTube Men’s Vintage Henley* frequently also purchased *Google Sun
 **Business goal:** Grow monthly revenue by improving channel quality, onsite funnel, and cross-sell.
 
 **Baseline health check (January-August 2017)**
+
 - May had highest conversion rate (1,160 txns, 1.77% conversion rate), while July had highest visits and pageviews (71.8k visits, 270k pageviews, 1.49% conversion rate). Recommend to **set a goal to lift July’s conversion rate to May’s level**.
 - Cohort map funnel was consistent through the months, ~38–42% of product views add to cart and ~8–13% convert to purchase. Thus, the biggest loss was **View → Add to Cart**. Recommend to **improve product detail page**, for example, stronger CTA, size/fit guide, faster images, better navigation etc.
 
 **July in focus**
+
 - Revenue mainly came from **direct (~79%)** and **Google search (~20%)**
   - Recommendations:
         - Add standard query parameters to your links so analytics can attribute traffic and revenue to the right campaigns, instead of tagging them all into “(direct)”.
