@@ -21,8 +21,9 @@ Below are the fields, data type, description of the fields I used in this SQL pr
 
 | Field Name | Data Type | Description |
 |----------|----------|----------|
-| right    | center   | left     |
-| 123      | 456      | 789      |
+| fullVisitorId   | String   | The unique visitor ID     |
+| date      | String     | The date of the session in YYYYMMDD format      |
+| date      | String     | The date of the session in YYYYMMDD format      |
 
   
 
