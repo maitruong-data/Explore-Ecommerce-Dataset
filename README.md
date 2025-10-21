@@ -1,10 +1,12 @@
 # Explore-Ecommerce-Dataset
 Use SQL in BigQuery to improve channel quality, cohort funnel and cross-sell
+
 ## I. PROJECT OVERVIEW
 This project contains an eCommerce dataset that I will explore using SQL on Google BigQuery. 
 **Business goals:** 
 This project analyzes Google Analytics 360 e-commerce sessions to find practical levers for **growing monthly revenue**. I compares baseline performance and seasonality (visits, pageviews, transactions), with focus on July, and evaluate **channel quality** and **onsite funnel efficiency** using bounce rate, revenue per session, and the view → add-to-cart → purchase path. The analysis identifies which traffic sources to scale or fix, where users drop off, the expected AOV/upsell potential, and **cross-sell pairs** for “frequently bought together,” turning raw GA data into concrete actions for acquisition, conversion, and merchandising.
 
+## II. DATASET
 **Dataset access:**
 This eCommerce dataset is stored in a public Google BigQuery dataset. To access the dataset, follow these steps:
 - Log in to your Google Cloud Platform account
@@ -38,6 +40,30 @@ Below are the fields, data type, description of the fields I used in this SQL pr
 | hits.product.productRevenue      | Integer     | The revenue of the product, expressed as the value passed to Analytics multiplied by 10^6 (e.g., 2.40 would be given as 2400000)      |
 | hits.product.productSKU      | String     | Product SKU      |
 | hits.product.v2ProductName      | String     | Product Name     |
+
+## III. EXPLORE DATASET
+This project includes 8 queries
+
+### Query 1. Calculate total visit, pageview, transaction for January - August 2017 (order by month).
+**SQL code**
+```
+SELECT 
+  FORMAT_DATE('%Y%m', parse_date('%Y%m%d', date)) AS month
+  ,SUM(totals.visits) AS visits
+  ,SUM(totals.pageviews) AS pageview
+  ,SUM(totals.transactions) AS transactions
+  ,ROUND(100 * SAFE_DIVIDE(SUM(totals.transactions), SUM(totals.visits)), 2) AS conversion_rate_pct
+
+FROM `bigquery-public-data.google_analytics_sample.ga_sessions_2017*` 
+GROUP BY month
+ORDER BY month;
+```
+
+**Query result**
+
+<img width="911" height="305" alt="image" src="https://github.com/user-attachments/assets/c93ba95c-696d-49ca-97ce-3aeb22f21db3" />
+
+
 
 
   
