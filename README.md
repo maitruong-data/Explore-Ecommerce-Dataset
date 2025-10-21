@@ -8,6 +8,7 @@ This project analyzes Google Analytics 360 e-commerce sessions to find practical
 
 ## II. DATASET
 **Dataset access:**
+
 This eCommerce dataset is stored in a public Google BigQuery dataset. To access the dataset, follow these steps:
 - Log in to your Google Cloud Platform account
 - Get data through:
@@ -15,10 +16,12 @@ This eCommerce dataset is stored in a public Google BigQuery dataset. To access 
   - Or create a new project in BigQuery -> select "Add Data" -> "Search a project" -> Enter the project ID "bigquery-public-data.google_analytics_sample.ga_sessions" -> "Enter" -> Click on the "ga_sessions_" table to open it
 
 **Dataset description:** 
+
 The dataset is based on the Google Analytics public dataset and contains data from an eCommerce website. (`bigquery-public-data.google_analytics_sample.ga_sessions_20170801` )
 The sample dataset contains obfuscated Google Analytics 360 data from the [Google Merchandise Store](https://www.googlemerchandisestore.com/shop.axd/Home?utm_source=Partners&utm_medium=affiliate&utm_campaign=Data%20Share%20Promo), a real ecommerce store. The Google Merchandise Store sells Google branded merchandise. The data is typical of what you would see for an ecommerce website. 
 
 **Data description table:**
+
 Below are the fields, data type, description of the fields I used in this SQL project
 
 | Field Name | Data Type | Description |
