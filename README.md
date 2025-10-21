@@ -123,6 +123,7 @@ ORDER BY pv.month;
 ```
 
 **Query result**
+
 <img width="1031" height="307" alt="image" src="https://github.com/user-attachments/assets/d81db07a-af69-4e5f-9563-0c7f506e6e3a" />
 
 **Key-takeaway:**
@@ -144,6 +145,7 @@ ORDER BY bounce_rate DESC;
 ```
 
 **Query result**
+
 <img width="574" height="568" alt="image" src="https://github.com/user-attachments/assets/dd657a27-fcee-419d-b16b-86cf311b4c40" />
 
 **Key-takeaway:**
@@ -175,6 +177,7 @@ GROUP BY month, source
 ORDER BY month, revenue DESC;
 ```
 **Query result**
+
 <img width="527" height="352" alt="image" src="https://github.com/user-attachments/assets/87880d26-1ebc-48b0-9d04-4c3d9645b09c" />
 
 **Key-takeaway:**
@@ -217,6 +220,7 @@ Non-purchasers view far more pages than purchasers (~334 vs ~124/pageviews per u
 ```
 
 **Query result**
+
 <img width="593" height="72" alt="image" src="https://github.com/user-attachments/assets/6f94631b-4144-4bf2-8b81-b273e95b3c0f" />
 
 **Key-takeaway:**
@@ -239,6 +243,7 @@ GROUP BY month;
 ```
 
 **Query result**
+
 <img width="387" height="69" alt="image" src="https://github.com/user-attachments/assets/301504ed-899a-451c-b814-d4464878d2a2" />
 
 ### Query 7. Average amount of money spent per session in July 2017
@@ -257,6 +262,7 @@ GROUP BY month;
 ```
 
 **Query result**
+
 <img width="373" height="71" alt="image" src="https://github.com/user-attachments/assets/9ea99366-7730-4898-aa06-3c70d3346805" />
 
 ### Query 8. Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered.
@@ -288,6 +294,7 @@ ORDER BY quantity DESC;
 ```
 
 **Query result**
+
 <img width="427" height="568" alt="image" src="https://github.com/user-attachments/assets/685078a1-db4d-4a07-a70d-d63640f2b310" />
 
 **Key-takeaway:**
