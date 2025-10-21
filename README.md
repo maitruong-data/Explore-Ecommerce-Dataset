@@ -23,7 +23,23 @@ Below are the fields, data type, description of the fields I used in this SQL pr
 |----------|----------|----------|
 | fullVisitorId   | String   | The unique visitor ID     |
 | date      | String     | The date of the session in YYYYMMDD format      |
-| date      | String     | The date of the session in YYYYMMDD format      |
+| totals      | Record     | This section contains aggregate values across the session      |
+| totals.bounces      | Integer     | Total bounces (for convenience). For a bounced session, the value is 1, otherwise it is null      |
+| totals.hits      | Integer     | Total number of hits within the session      |
+| totals.pageviews      | Integer     | Total number of pageviews within the session      |
+| totals.visits     | Integer     | The number of sessions (for convenience). This value is 1 for sessions with interaction events. The value is null if there are no interaction events in the session      |
+| totals.transactions      | Integer     | Total number of ecommerce transactions within the session      |
+| trafficSource.source      | String     | The source of the traffic source. Could be the name of the search engine, the referring hostname, or a value of the utm_source URL parameter      |
+| hits      | Record     | This row and nested fields are populated for any and all types of hits      |
+| hits.eCommerceAction      | Record     | This section contains all of the ecommerce hits that occurred during the session. This is a repeated field and has an entry for each hit that was collected      |
+| hits.eCommerceAction.action_type      | String     | The action type. Click through of product lists = 1, Product detail views = 2, Add product(s) to cart = 3, Remove product(s) from cart = 4, Check out = 5, Completed purchase = 6, Refund of purchase = 7, Checkout options = 8, Unknown = 0.
+Usually this action type applies to all the products in a hit, with the following exception: when hits.product.isImpression = TRUE, the corresponding product is a product impression that is seen while the product action is taking place (i.e., a "product in list view")      |
+| hits.product      | Record     | This row and nested fields will be populated for each hit that contains Enhanced Ecommerce PRODUCT data      |
+| hits.product.productQuantity      | Integer     | The quantity of the product purchased      |
+| hits.product.productRevenue      | Integer     | The revenue of the product, expressed as the value passed to Analytics multiplied by 10^6 (e.g., 2.40 would be given as 2400000)      |
+| hits.product.productSKU      | String     | Product SKU      |
+| hits.product.v2ProductName      | String     | Product Name     |
+
 
   
 
